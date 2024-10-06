@@ -7,14 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { OrderDishDetailsPageRoutingModule } from './order-dish-details-routing.module';
 
 import { OrderDishDetailsPage } from './order-dish-details.page';
+import { NavbarComponent } from '../components/navbar/navbar.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrderDishDetailsPageRoutingModule
+    OrderDishDetailsPageRoutingModule,
   ],
-  declarations: [OrderDishDetailsPage]
+  declarations: [OrderDishDetailsPage, NavbarComponent],
 })
 export class OrderDishDetailsPageModule {}
