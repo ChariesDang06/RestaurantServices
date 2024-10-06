@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-order-bill-details',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order-bill-details.page.scss'],
 })
 export class OrderBillDetailsPage implements OnInit {
+  isMobile: boolean;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private platform: Platform) {
+    this.isMobile = this.platform.is('mobile'); // Check if the platform is mobile
   }
 
+  ngOnInit() {}
 }
