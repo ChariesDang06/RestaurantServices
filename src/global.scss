@@ -44,5 +44,5 @@ html, body, ion-app, ion-content {
   }
 
 ion-content::part(scroll){
-  padding: var(--default-margin);
+  margin: var(--default-margin);
 }
