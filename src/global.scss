@@ -40,5 +40,9 @@
 
 
 html, body, ion-app, ion-content {
-    font-family: $font-family-default;
+    font-family: var(--ion-font-family);
   }
+
+.ion-padding{
+    padding: var(--ion-content-padding);
+}

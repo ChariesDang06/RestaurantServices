@@ -1,20 +1,28 @@
-// Define Font Sizes
-$font-size-heading: 32px;
-$font-size-sub-heading-1: 28px;
-$font-size-sub-heading-2: 24px;
-$font-size-text-heading: 20px;
-$font-size-text-content: 16px;
-$font-size-subtext-content: 14px;
+:root {
+    /* Set font family for the app */
+    --ion-font-family: 'Segoe UI', sans-serif;
+    --ion-content--padding: 20px:
+  
+    /* Heading sizes */
+    --heading-font-size: 32px;
+    --sub-heading-1-font-size: 28px;
+    --sub-heading-2-font-size: 24px;
+  
+    /* Text heading size */
+    --text-heading-font-size: 20px;
+    
+    /* Text content sizes */
+    --text-content-font-size: 16px;
+  
+    /* Subtext content sizes */
+    --subtext-content-font-size: 14px;
 
+  
+    /* Color styles */
+    --primary-color: #ff0000;  /* Red */
+    --green-color: #00ff00;    /* Green */
+    --secondary-color: #5E5E5E;/* Gray */
+    --tertiary-color: #2B2B2B; /* Black */
 
-// Define Colors
-$color-primary: #FF0000;  // Red (Primary)
-$color-green: #00FF00;    // Green
-$color-secondary: #2B2B2B; // Black (Secondary)
-$color-tertiary: #5E5E5E; // Grey (Tertiary)
-
-// Define Global Font Family
-$font-family-default: 'Segoe UI', sans-serif;
-
-
-
+  }
+  
