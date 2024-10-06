@@ -44,8 +44,8 @@ html, body, ion-app, ion-content {
   }
 
 ion-content {
-  background:var(--black-primary);
-  color:var(--white-primary);
+  --background:var(--black-primary);
+  --color:var(--white-primary);
   font-size: var(--text-content-font-size);
   font-family:var(--ion-font-family);
   margin: var(--default-margin);
