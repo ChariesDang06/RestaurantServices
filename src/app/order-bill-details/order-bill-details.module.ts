@@ -7,14 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { OrderBillDetailsPageRoutingModule } from './order-bill-details-routing.module';
 
 import { OrderBillDetailsPage } from './order-bill-details.page';
+import { NavbarComponent } from '../components/navbar/navbar.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrderBillDetailsPageRoutingModule
+    OrderBillDetailsPageRoutingModule,
   ],
-  declarations: [OrderBillDetailsPage]
+  declarations: [OrderBillDetailsPage, NavbarComponent],
 })
 export class OrderBillDetailsPageModule {}
