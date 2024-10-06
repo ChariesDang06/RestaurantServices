@@ -43,6 +43,4 @@ html, body, ion-app, ion-content {
     font-family: var(--ion-font-family);
   }
 
-ion-content::part(scroll){
-  margin: var(--default-margin);
-}
+
