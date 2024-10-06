@@ -7,7 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { OrderDishDetailsPageRoutingModule } from './order-dish-details-routing.module';
 
 import { OrderDishDetailsPage } from './order-dish-details.page';
+
 import { NavbarComponent } from '../components/navbar/navbar.component';
+import { NavBarModule } from '../components/navbar/navbar.module';
 
 @NgModule({
   imports: [
@@ -15,7 +17,9 @@ import { NavbarComponent } from '../components/navbar/navbar.component';
     FormsModule,
     IonicModule,
     OrderDishDetailsPageRoutingModule,
+    NavBarModule ,
   ],
-  declarations: [OrderDishDetailsPage, NavbarComponent],
+  declarations: [OrderDishDetailsPage],
+  exports:[OrderDishDetailsPage]
 })
 export class OrderDishDetailsPageModule {}

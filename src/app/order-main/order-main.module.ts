@@ -9,8 +9,11 @@ import { OrderMainPageRoutingModule } from './order-main-routing.module';
 import { OrderMainPage } from './order-main.page';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 
+import { NavBarModule } from '../components/navbar/navbar.module';
+
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, OrderMainPageRoutingModule],
-  declarations: [OrderMainPage, NavbarComponent],
+  imports: [CommonModule, FormsModule, IonicModule, OrderMainPageRoutingModule, NavBarModule ],
+  declarations: [OrderMainPage],
+  exports:[OrderMainPage]
 })
 export class OrderMainPageModule {}
