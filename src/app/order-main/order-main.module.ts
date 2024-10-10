@@ -6,14 +6,20 @@ import { IonicModule } from '@ionic/angular';
 
 import { OrderMainPageRoutingModule } from './order-main-routing.module';
 
-import { OrderMainPage } from './order-main.page';
-import { NavbarComponent } from '../components/navbar/navbar.component';
-
 import { NavBarModule } from '../components/navbar/navbar.module';
+import { orderDishModule } from '../components/order-dish/order-dish.module';
+import { OrderMainPage } from './order-main.page';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, OrderMainPageRoutingModule, NavBarModule ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    OrderMainPageRoutingModule,
+    NavBarModule,
+    orderDishModule,
+  ],
   declarations: [OrderMainPage],
-  exports:[OrderMainPage]
+  exports: [OrderMainPage],
 })
 export class OrderMainPageModule {}
