@@ -1,3 +1,4 @@
+
 img {
   max-width: none;
 }
@@ -45,8 +46,8 @@ ion-col {
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-33%, -50%);
-  width: 120%;
+  transform: translate(-33%, -37%);
+  width: 125%;
   height: auto;
   z-index: 1;
 }
@@ -126,7 +127,7 @@ height: 160px;
 
 h1{
   margin-top: 10px;
-  font-size: 48px;
+  font-size: 40px;
 }
 .content-wrapper {
 
@@ -148,7 +149,7 @@ h1{
   --border-radius: 50px;
   --color: white;
   padding: 10px 20px;
-  width: 100%; 
+  width: 99%; 
   height: 120px;
   position: relative;
   overflow: visible;
@@ -171,10 +172,11 @@ h1{
 /* quảng cáo */
 .qc {
   margin-top: 10px;
-  padding: 15px 30px 10px 30px;
+  padding: 15px 0 10px 30px;
   width: 100%;
   height: auto;
   background-color: red;
+  position: relative; /* Cần thiết để định vị phần tử con */
 }
 
 .qc h5 {
@@ -186,6 +188,16 @@ h1{
   font-size: 1.25em; /* Điều chỉnh kích thước chữ cho "15%" */
   font-weight: bold; /* Tùy chọn: làm cho chữ nổi bật hơn */
 }
+
+.qc-image {
+  position: absolute;
+  right: 10px; /* Căn lề phải */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  transform: translateY(-50%); /* Đảm bảo hình ảnh ở giữa chiều dọc */
+  width: 50%; /* Điều chỉnh kích thước hình ảnh */
+  height: auto;
+}
+
 .spectial-content{
   text-align: center; /* Căn giữa nội dung văn bản */
   display: flex;
